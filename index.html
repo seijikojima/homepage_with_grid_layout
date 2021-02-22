@@ -9,7 +9,7 @@
     <div class="container">
         <div class="header"></div>
         <div class="left"></div>
-        <div class="icon"><img src="./cactos.png" height="200px"></div>
+        <div class="icon"><img class="icon_img" src="./cactos.png"></div>
         <div class="contents">
             <div class="name">Seiji Kojima</div>
             <div class="job_title">ML Engineer</div>
@@ -63,6 +63,9 @@ body {
     grid-area : icon;
     /* border : solid 1px; */
 }
+.icon_img {
+    height : 200px;
+}
 .contents {
     grid-area : contents;
     /* border : solid 1px; */
@@ -93,4 +96,27 @@ a {
 .hidden_item {
     color : #fff;
 }
+
+@media screen and (max-width:700px) {
+
+body {
+    font-family: Roboto;
+    margin : 0px;
+    font-size : 70%
+}
+.items {
+    margin : 10px 0 0 0;
+}
+.icon_img {
+    height : 115px;
+}
+.name {
+    font-size : 200%
+}
+.job_title{
+    font-size : 120%
+}
+}
+
+
 </style>
