@@ -99,6 +99,19 @@ a {
 
 @media screen and (max-width:700px) {
 
+    .container {
+    height: 100vh;
+    display : grid;
+    grid-template-areas: 
+    "header header header header"
+    "left icon contents right"
+    "footer footer footer footer";
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    /* grid-template-columns: repeat(4,1fr); */
+
+}
+
 body {
     font-family: Roboto;
     margin : 0px;
