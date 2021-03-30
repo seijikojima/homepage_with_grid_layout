@@ -15,11 +15,19 @@
             <div class="job_title">ML Engineer</div>
 
             <div class="items">
-                <div><a href="http://seijikojima.com:8000/">Note</a></div>                
-                <div><a href="https://seijikojima.github.io/application/">Application</a></div>
-                <div><a href="https://github.com/seijikojima">Github</a></div>
-                <div><a class="hidden_item" href="https://seijikojima.github.io/reference/">Reference</a></div>
-                <div><a class="hidden_item" href="https://seijikojima.github.io/technology/">Technology</a></div>
+                <div class="items_left">
+                    <div><a href="http://seijikojima.com:8000/">Note</a></div>                
+                    <div><a href="https://seijikojima.github.io/application/">Application</a></div>
+                    <div><a href="https://github.com/seijikojima">Github</a></div>
+                    <div><a class="hidden_item" href="https://seijikojima.github.io/reference/">Reference</a></div>
+                    <div><a class="hidden_item" href="https://seijikojima.github.io/technology/">Technology</a></div>
+                </div>
+
+                <div class="items_right">
+                    <div><a href="https://hub.docker.com/u/seijikojima">Dockerhub</a></div>
+                </div>
+
+
             </div>
 
         </div>
@@ -78,9 +86,18 @@ body {
     font-size : 150%
 }
 .items {
-    margin : 20px 0 0 0;
+    margin : 10px 0 0 0;
+    display : flex;
+    
     /* border : solid 1px; */
 }
+
+.items_right {
+    margin : 0 0 0 20px;
+}
+
+
+
 .right {
     grid-area : right;
     /* border : solid 1px; */
@@ -120,8 +137,16 @@ body {
     font-size : 100%
 }
 .items {
+    font-size : 80%;
     margin : 10px 0 0 0;
+    display : flex;
 }
+
+.items_right {
+    /* border : solid 1px; */
+    margin : 0 0 0 10px;
+}
+
 .icon_img {
     height : 135px;
 }
@@ -129,7 +154,7 @@ body {
     font-size : 180%
 }
 .job_title{
-    font-size : 150%
+    font-size : 120%
 }
 }
 
